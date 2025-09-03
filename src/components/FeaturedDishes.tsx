@@ -70,7 +70,7 @@ const FeaturedDishes = () => {
         <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         Featured{' '}
                         <span className="text-accent inline-block">Dishes</span>
                     </h2>
@@ -121,7 +121,7 @@ const FeaturedDishes = () => {
                                     <div className="absolute top-4 right-4 w-1.5 h-1.5 bg-white/20 rounded-full animate-steam [animation-delay:0.5s] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="font-display text-xl font-bold text-accent mb-2">
+                                    <h3 className="text-xl font-bold text-accent mb-2">
                                         {dish.name}
                                     </h3>
                                     <p className="text-muted-foreground mb-4">

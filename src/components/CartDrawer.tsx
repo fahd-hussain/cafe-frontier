@@ -18,7 +18,7 @@ const CartDrawer = () => {
         <Sheet>
             <SheetContent className="w-[400px] sm:w-[540px] bg-card">
                 <SheetHeader>
-                    <SheetTitle className="font-display text-2xl text-accent animate-spice-dance">
+                    <SheetTitle className="text-2xl text-accent animate-spice-dance">
                         Your Order
                     </SheetTitle>
                     <SheetDescription className="animate-float">

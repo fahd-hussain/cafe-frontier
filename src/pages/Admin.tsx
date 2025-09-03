@@ -110,7 +110,7 @@ const Admin = () => {
             <div className="relative z-10 p-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-8">
-                        <h1 className="font-display text-4xl md:text-5xl font-bold text-accent mb-4">
+                        <h1 className="text-4xl md:text-5xl font-bold text-accent mb-4">
                             Review Management
                         </h1>
                         <p className="text-lg text-muted-foreground">

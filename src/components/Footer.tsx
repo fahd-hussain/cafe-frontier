@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand Section */}
                     <div className="text-center md:text-left">
-                        <h3 className="font-display text-2xl font-bold text-accent mb-4">
+                        <h3 className="text-2xl font-bold text-accent mb-4">
                             Frontier
                         </h3>
                         <p className="text-muted-foreground mb-4">
@@ -43,7 +43,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div className="text-center">
-                        <h4 className="font-display text-xl font-semibold text-white mb-4">
+                        <h4 className="text-xl font-semibold text-white mb-4">
                             Contact Information
                         </h4>
                         <div className="space-y-3">
@@ -66,7 +66,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="text-center md:text-right">
-                        <h4 className="font-display text-xl font-semibold text-white mb-4">
+                        <h4 className="text-xl font-semibold text-white mb-4">
                             Quick Links
                         </h4>
                         <div className="space-y-2">

@@ -301,9 +301,9 @@ const MenuSection = () => {
                 <div className="absolute top-2 right-2 w-1 h-1 bg-accent rounded-full animate-spice-dance opacity-60"></div>
                 <div className="absolute bottom-4 left-4 w-0.5 h-0.5 bg-accent/70 rounded-full animate-float [animation-delay:1s]"></div>
 
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-col justify-between mb-4">
                     <div className="flex items-center gap-2">
-                        <h3 className="font-display text-lg font-bold text-accent line-clamp-1">
+                        <h3 className="text-lg font-bold text-primary line-clamp-1">
                             {item.name}
                         </h3>
                         <FavoriteButton
@@ -319,7 +319,7 @@ const MenuSection = () => {
                             size="sm"
                         />
                     </div>
-                    <span className="text-lg font-semibold text-primary line-clamp-1">
+                    <span className="text-base font-semibold text-black/90 line-clamp-1">
                         Rs. {item.price}
                     </span>
                 </div>
@@ -354,7 +354,7 @@ const MenuSection = () => {
         <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         Our{' '}
                         <span className="text-accent inline-block">Menu</span>
                     </h2>
@@ -371,9 +371,9 @@ const MenuSection = () => {
                             placeholder="Search our menu..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="bg-white border-2 border-primary text-foreground placeholder:text-accent pr-10 focus:border-accent transition-colors"
+                            className="bg-white border-2 border-primary text-black/95 placeholder:text-black/95 pr-10 focus:border-accent transition-colors"
                         />
-                        <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-accent" />
+                        <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-black/95" />
                     </div>
                 </div>
 
@@ -382,7 +382,7 @@ const MenuSection = () => {
                     <div className="mb-8">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     Search Results ({filteredItems.length} items
                                     found)
                                 </CardTitle>
@@ -471,7 +471,7 @@ const MenuSection = () => {
                     <TabsContent value="karahi">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     KARAHI (Half / Full)
                                 </CardTitle>
                             </CardHeader>
@@ -514,7 +514,7 @@ const MenuSection = () => {
                     <TabsContent value="handi">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     HANDI (Half / Full)
                                 </CardTitle>
                             </CardHeader>
@@ -557,7 +557,7 @@ const MenuSection = () => {
                     <TabsContent value="barbq">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     BAR B.Q (Half / Full)
                                 </CardTitle>
                             </CardHeader>
@@ -600,7 +600,7 @@ const MenuSection = () => {
                     <TabsContent value="biryani">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     BIRYANI (Half / Full)
                                 </CardTitle>
                             </CardHeader>
@@ -643,7 +643,7 @@ const MenuSection = () => {
                     <TabsContent value="chinese">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     CHINESE
                                 </CardTitle>
                             </CardHeader>
@@ -686,7 +686,7 @@ const MenuSection = () => {
                     <TabsContent value="naan">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     NAAN & PATEER
                                 </CardTitle>
                             </CardHeader>
@@ -727,7 +727,7 @@ const MenuSection = () => {
                     <TabsContent value="beverage">
                         <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
                             <CardHeader>
-                                <CardTitle className="font-display text-2xl text-accent text-center">
+                                <CardTitle className="text-2xl text-accent text-center">
                                     SALAD, RAITA & BEVERAGES
                                 </CardTitle>
                             </CardHeader>

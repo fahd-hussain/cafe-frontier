@@ -109,7 +109,7 @@ const ReviewSection = () => {
                 <div className="max-w-4xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h2 className="font-display text-4xl md:text-5xl font-bold text-accent mb-4">
+                        <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">
                             Share Your Experience
                         </h2>
                         <p className="text-lg text-muted-foreground">
@@ -121,7 +121,7 @@ const ReviewSection = () => {
                     {/* Review Form */}
                     <Card className="mb-12 bg-card border-border shadow-card">
                         <CardHeader>
-                            <h3 className="text-2xl font-display font-semibold text-accent">
+                            <h3 className="text-2xl font-semibold text-accent">
                                 Leave a Review
                             </h3>
                         </CardHeader>
@@ -189,7 +189,7 @@ const ReviewSection = () => {
 
                     {/* Reviews Display */}
                     <div>
-                        <h3 className="text-3xl font-display font-semibold text-accent mb-8 text-center">
+                        <h3 className="text-3xl font-semibold text-accent mb-8 text-center">
                             Customer Reviews
                         </h3>
 

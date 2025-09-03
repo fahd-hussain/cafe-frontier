@@ -17,7 +17,7 @@ const HeroSection = () => {
             {/* Content */}
             <div className="relative z-10 flex h-full items-center justify-center px-4">
                 <div className="text-center max-w-4xl">
-                    <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
                         Satisfy Your Cravings with{' '}
                         <span className="text-accent inline-block">
                             Frontier

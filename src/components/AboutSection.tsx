@@ -3,7 +3,7 @@ const AboutSection = () => {
         <section className="py-16 bg-primary">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                         About{' '}
                         <span className="text-accent inline-block">
                             Frontier
