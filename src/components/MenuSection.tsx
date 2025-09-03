@@ -295,7 +295,7 @@ const MenuSection = () => {
             | 'naan'
             | 'beverage';
     }) => (
-        <Card className="bg-card shadow-card hover:shadow-glow transition-all duration-300 border-primary/20 group hover:animate-sizzle">
+        <Card className="bg-card shadow-card hover:shadow-glow transition-all duration-300 border-primary/20 group">
             <CardContent className="p-6 relative">
                 {/* Animated spice particles */}
                 <div className="absolute top-2 right-2 w-1 h-1 bg-accent rounded-full animate-spice-dance opacity-60"></div>
@@ -303,7 +303,7 @@ const MenuSection = () => {
 
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
-                        <h3 className="font-display text-lg font-bold text-accent group-hover:animate-bounce-slow">
+                        <h3 className="font-display text-lg font-bold text-accent line-clamp-1">
                             {item.name}
                         </h3>
                         <FavoriteButton
@@ -319,7 +319,7 @@ const MenuSection = () => {
                             size="sm"
                         />
                     </div>
-                    <span className="text-lg font-semibold text-primary animate-appetite-pulse">
+                    <span className="text-lg font-semibold text-primary line-clamp-1">
                         Rs. {item.price}
                     </span>
                 </div>
@@ -341,7 +341,7 @@ const MenuSection = () => {
                     <Button
                         size="sm"
                         variant="outline"
-                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground animate-float"
+                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                     >
                         Order Now
                     </Button>
@@ -354,13 +354,11 @@ const MenuSection = () => {
         <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 animate-dish-rotate">
+                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
                         Our{' '}
-                        <span className="text-accent animate-spice-dance inline-block">
-                            Menu
-                        </span>
+                        <span className="text-accent inline-block">Menu</span>
                     </h2>
-                    <p className="text-lg text-muted-foreground animate-float">
+                    <p className="text-lg text-muted-foreground">
                         Authentic Desi flavors prepared with passion since 1972
                     </p>
                 </div>

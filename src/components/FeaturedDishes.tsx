@@ -70,11 +70,9 @@ const FeaturedDishes = () => {
         <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 animate-float">
+                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
                         Featured{' '}
-                        <span className="text-accent animate-spice-dance inline-block">
-                            Dishes
-                        </span>
+                        <span className="text-accent inline-block">Dishes</span>
                     </h2>
                     <p className="text-lg text-muted-foreground animate-fade-in">
                         Discover our most popular and signature creations
@@ -85,7 +83,7 @@ const FeaturedDishes = () => {
                     {dishes.map((dish, index) => (
                         <Card
                             key={dish.name}
-                            className="bg-card shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in border-primary/20 group hover:animate-sizzle"
+                            className="bg-card shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in border-primary/20 group"
                             style={{ animationDelay: `${index * 0.2}s` }}
                         >
                             <CardContent className="p-0 relative">
@@ -123,14 +121,14 @@ const FeaturedDishes = () => {
                                     <div className="absolute top-4 right-4 w-1.5 h-1.5 bg-white/20 rounded-full animate-steam [animation-delay:0.5s] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="font-display text-xl font-bold text-accent mb-2 animate-bounce-slow">
+                                    <h3 className="font-display text-xl font-bold text-accent mb-2">
                                         {dish.name}
                                     </h3>
                                     <p className="text-muted-foreground mb-4">
                                         {dish.description}
                                     </p>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-lg font-semibold text-primary animate-spice-dance">
+                                        <span className="text-lg font-semibold text-primary">
                                             Rs. {dish.price}
                                         </span>
                                         <Button

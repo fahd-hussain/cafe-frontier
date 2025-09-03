@@ -48,7 +48,7 @@ const Navigation = () => {
                         <img
                             src="/lovable-uploads/36ef602b-c8e4-4008-9d42-9ae1ab5a60b1.png"
                             alt="Frontier Restaurant Logo"
-                            className="h-10 w-auto"
+                            className="h-20 w-auto"
                             loading="eager"
                             decoding="async"
                         />
@@ -79,7 +79,7 @@ const Navigation = () => {
 
                     {/* User Account & Cart */}
                     <div className="flex items-center space-x-4">
-                        {user ? (
+                        {/* {user ? (
                             <DropdownMenu>
                                 <DropdownMenuTrigger asChild>
                                     <Button
@@ -115,7 +115,7 @@ const Navigation = () => {
                             >
                                 Sign In
                             </Button>
-                        )}
+                        )} */}
 
                         <Button
                             onClick={() => {

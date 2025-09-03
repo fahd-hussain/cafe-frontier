@@ -3,9 +3,9 @@ const AboutSection = () => {
         <section className="py-16 bg-primary">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6 animate-float">
+                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
                         About{' '}
-                        <span className="text-accent animate-spice-dance inline-block">
+                        <span className="text-accent inline-block">
                             Frontier
                         </span>
                     </h2>
@@ -19,7 +19,7 @@ const AboutSection = () => {
                         specialize in traditional Karahi and Handi dishes, known
                         for our customizable flavors and fresh ingredients.
                     </p>
-                    <p className="text-lg text-muted-foreground animate-bounce-slow">
+                    <p className="text-lg text-muted-foreground">
                         As a beloved destination for breakfast and dinner,
                         Frontier offers authentic cuisine prepared with passion
                         for generations. Whether you dine in or order to your

@@ -5,34 +5,17 @@ import {
     SheetDescription,
     SheetHeader,
     SheetTitle,
-    SheetTrigger,
 } from '@/components/ui/sheet';
 import { ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
 import { Card, CardContent } from '@/components/ui/card';
 
 const CartDrawer = () => {
-    const {
-        items,
-        updateQuantity,
-        removeFromCart,
-        clearCart,
-        totalItems,
-        totalPrice,
-    } = useCart();
+    const { items, updateQuantity, removeFromCart, clearCart, totalPrice } =
+        useCart();
 
     return (
         <Sheet>
-            <SheetTrigger asChild>
-                <Button
-                    variant="outline"
-                    size="lg"
-                    className="fixed top-4 right-4 z-50 bg-accent text-accent-foreground hover:bg-accent/90 border-accent animate-appetite-pulse"
-                >
-                    <ShoppingCart className="w-5 h-5 mr-2 animate-bounce-slow" />
-                    Cart ({totalItems})
-                </Button>
-            </SheetTrigger>
             <SheetContent className="w-[400px] sm:w-[540px] bg-card">
                 <SheetHeader>
                     <SheetTitle className="font-display text-2xl text-accent animate-spice-dance">

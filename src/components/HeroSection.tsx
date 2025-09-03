@@ -19,7 +19,7 @@ const HeroSection = () => {
                 <div className="text-center max-w-4xl">
                     <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
                         Satisfy Your Cravings with{' '}
-                        <span className="text-accent animate-spice-dance inline-block">
+                        <span className="text-accent inline-block">
                             Frontier
                         </span>
                     </h1>
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     </p>
                     <Button
                         size="lg"
-                        className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 animate-fade-in [animation-delay:0.6s] animate-appetite-pulse"
+                        className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 [animation-delay:0.6s] animate-appetite-pulse"
                     >
                         Order Now
                     </Button>
