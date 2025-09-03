@@ -6,60 +6,63 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 interface FavoriteButtonProps {
-  dish: DishItem;
-  size?: 'sm' | 'md' | 'lg';
+    dish: DishItem;
+    size?: 'sm' | 'md' | 'lg';
 }
 
-const FavoriteButton: React.FC<FavoriteButtonProps> = ({ dish, size = 'md' }) => {
-  const { toggleFavorite, isFavorited } = useFavorites();
-  const { user } = useAuth();
-  const navigate = useNavigate();
+const FavoriteButton: React.FC<FavoriteButtonProps> = ({
+    dish,
+    size = 'md',
+}) => {
+    const { toggleFavorite, isFavorited } = useFavorites();
+    const { user } = useAuth();
+    const navigate = useNavigate();
 
-  const handleFavoriteClick = async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    
-    if (!user) {
-      navigate('/auth');
-      return;
-    }
+    const handleFavoriteClick = async (e: React.MouseEvent) => {
+        e.stopPropagation();
 
-    await toggleFavorite(dish);
-  };
+        if (!user) {
+            navigate('/auth');
+            return;
+        }
 
-  const isActive = isFavorited(dish.id);
-  
-  const sizeClasses = {
-    sm: 'h-8 w-8',
-    md: 'h-10 w-10',
-    lg: 'h-12 w-12'
-  };
+        await toggleFavorite(dish);
+    };
 
-  const iconSizes = {
-    sm: 16,
-    md: 20,
-    lg: 24
-  };
+    const isActive = isFavorited(dish.id);
 
-  return (
-    <Button
-      variant="ghost"
-      size="icon"
-      className={`${size === 'sm' ? '' : 'absolute top-2 right-2 z-10'} ${sizeClasses[size]} rounded-full ${size === 'sm' ? '' : 'bg-background/80 backdrop-blur-sm'} hover:bg-accent/80 transition-all duration-200 ${
-        isActive 
-          ? 'text-yellow-500 hover:text-yellow-600' 
-          : 'text-muted-foreground hover:text-yellow-500'
-      }`}
-      onClick={handleFavoriteClick}
-      aria-label={isActive ? 'Remove from favorites' : 'Add to favorites'}
-    >
-      <Heart 
-        size={iconSizes[size]} 
-        className={`transition-all duration-200 ${
-          isActive ? 'fill-current' : ''
-        }`}
-      />
-    </Button>
-  );
+    const sizeClasses = {
+        sm: 'h-8 w-8',
+        md: 'h-10 w-10',
+        lg: 'h-12 w-12',
+    };
+
+    const iconSizes = {
+        sm: 16,
+        md: 20,
+        lg: 24,
+    };
+
+    return (
+        <Button
+            variant="ghost"
+            size="icon"
+            className={`${size === 'sm' ? '' : 'absolute top-2 right-2 z-10'} ${sizeClasses[size]} rounded-full ${size === 'sm' ? '' : 'bg-background/80 backdrop-blur-sm'} hover:bg-accent/80 transition-all duration-200 ${
+                isActive
+                    ? 'text-yellow-500 hover:text-yellow-600'
+                    : 'text-muted-foreground hover:text-yellow-500'
+            }`}
+            onClick={handleFavoriteClick}
+            aria-label={isActive ? 'Remove from favorites' : 'Add to favorites'}
+        >
+            <Heart
+                size={iconSizes[size]}
+                className={`transition-all duration-200 ${
+                    isActive ? 'fill-current' : ''
+                }`}
+            />
+        </Button>
+    );
 };
 
 export default FavoriteButton;
